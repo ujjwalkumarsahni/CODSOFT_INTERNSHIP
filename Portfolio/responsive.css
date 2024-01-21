@@ -1,0 +1,116 @@
+@media (max-width: 985px){
+    .menu .menu_list li a{
+        font-size: 1rem;
+        padding: 14px;
+    }
+}
+@media (max-width: 900px){
+    .about-content h1{
+        font-size: 3em;
+        line-height: 1.4em;
+    }
+    .about-content h2{
+        font-size: 1.5em;
+
+    }
+    .about-content p{
+        font-size: .9em;
+
+    }
+    .menu button{
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        font-size: 1.7em;
+        z-index: 2;
+        margin-right: 20px;
+    }
+    .menu i.fa-times,
+    .menu.opened i.fa-bars {
+        display: none;
+    }
+    .menu.opened i.fa-times,
+    .menu i.fa-bars {
+        display: block;
+        animation: enter .5s;
+    }
+    @keyframes enter {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+    .menu_list{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 60%;
+        height: 100vh;
+        background: rgb(23, 23, 33);
+        color: rgb(255, 255, 255);
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.5s;
+    }
+    .menu_list li .profile-button{
+        color: azure;
+    }
+    .menu_list li {
+        margin: 20px 0px;
+    }
+    .menu_list li a{
+        font-size: 4em;
+        font-weight: 900;
+    }
+    .menu.opened .menu_list {
+        transform: translateX(0);
+    }
+
+    .menu.opened button {
+        color: #fff;
+    }
+}
+@media (max-width: 771px){
+    .about{
+        flex-direction: column-reverse;
+    }
+    .about-content{
+        text-align: center;
+        
+    }
+}
+@media (max-width: 650px){
+    .about-image img{
+        width: 320px;
+    }
+    .about-content{
+        text-align: center;
+    }
+    .course-contant{
+        flex-direction: column;
+    }
+}
+@media (max-width: 495px){
+    html,body{
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+    .course-contant{
+        width: 390px;
+    }
+}
+@media (max-width: 400px){
+    .course-contant{
+        width: 300px;
+    }
+}
